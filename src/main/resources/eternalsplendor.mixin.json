@@ -3,14 +3,14 @@
   "minVersion": "0.8",
   "package": "net.neava.eternalsplendor.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "eternalsplendor.refmap.json",
-
+  "refmap": "eternalsplendor_refmap.json",
   "client": [
   ],
   "mixins": [
-    "EnchantingMixin"
+    "EnchantmentTableBlockMixin",
+    "EnchantmentScreenMixin",
+    "ItemStackMixin"
   ],
-
   "injectors": {
     "defaultRequire": 1
   }
