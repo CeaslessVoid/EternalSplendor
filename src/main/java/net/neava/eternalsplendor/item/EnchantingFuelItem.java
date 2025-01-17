@@ -5,43 +5,42 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.spongepowered.asm.mixin.Mixin;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-public class CatalystItem extends Item {
+public class EnchantingFuelItem extends Item {
 
-    public final double expMod;
-    public final int chanceMod;
-    public final boolean hasRule;
+    public final int minLevel;
+
+    public final int maxLevel;
+
     public final Predicate<Enchantment> rule;
+
     public final String location;
 
-    public CatalystItem(Properties pProperties, double expMod, int chanceMod, boolean hasRule, Predicate<Enchantment> rule, String location) {
+    //public final class accessorClass;
+
+    public EnchantingFuelItem(Properties pProperties, int minLevel, int maxLevel, Predicate<Enchantment> rule, String location) {
         super(pProperties);
 
-        this.expMod = expMod;
-        this.chanceMod = chanceMod;
-        this.hasRule = hasRule;
+        this.minLevel = minLevel;
+        this.maxLevel = maxLevel;
+
         this.rule = rule != null ? rule : item -> true;
         this.location = location;
+
     }
 
-    public double getExpMod() {
-        return expMod;
+    public int getMaxLevel() {
+        return maxLevel;
     }
 
-    public int getChanceMod() {
-        return chanceMod;
-    }
-
-    public boolean isHasRule(){
-        return hasRule;
+    public int getMinLevel() {
+        return minLevel;
     }
 
     public boolean matchesRule(Enchantment enchantment) {
@@ -57,7 +56,7 @@ public class CatalystItem extends Item {
         }
 
         pTooltipComponents.add(Component.literal(""));
-        pTooltipComponents.add(Component.translatable("tooltip.neava_eternalsplendor.catalyst"));
+        pTooltipComponents.add(Component.translatable("tooltip.neava_eternalsplendor.enchantingfuel"));
 
     }
 }

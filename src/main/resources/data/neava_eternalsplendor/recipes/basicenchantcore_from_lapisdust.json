@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "levelingitem",
+  "category": "misc",
+  "pattern": [
+    "  #",
+    "#@ ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "neava_eternalsplendor:lapisdust"
+    },
+    "@": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "neava_eternalsplendor:basicenchantcore",
+    "count": 1
+  }
+}

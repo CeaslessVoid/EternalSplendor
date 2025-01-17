@@ -16,7 +16,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
+import net.neava.eternalsplendor.enchantment.Enchantments;
 import net.neava.eternalsplendor.init.ModMenus;
+import net.neava.eternalsplendor.item.ModCreativeModeTabs;
+import net.neava.eternalsplendor.item.ModItems;
 import org.slf4j.Logger;
 
 import java.util.function.BiConsumer;
@@ -32,6 +35,12 @@ public class EternalSplendorMod
     public EternalSplendorMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
+        Enchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

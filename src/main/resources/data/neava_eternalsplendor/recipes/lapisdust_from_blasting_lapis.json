@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 10,
+  "experience": 0.1,
+  "group": "misc",
+  "ingredient": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "result": "neava_eternalsplendor:lapisdust"
+}

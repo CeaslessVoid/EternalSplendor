@@ -1,3 +1,17 @@
 {
-  "tooltip.neava_eternalsplendor.enchantingtable" : "Enchatning Table Menu"
+  "tooltip.neava_eternalsplendor.enchantingtable" : "Enchatning Table Menu",
+  "item.neava_eternalsplendor.lapisdust": "Lapis Lazuli Dust",
+  "item.neava_eternalsplendor.basicenchantcore": "Basic Enchantment Core",
+  "creativetab.eternalsplendor_tab": "Eternal Splendor",
+
+
+  "tooltip.neava_eternalsplendor.lapisdust": "§9Enchanting effect: +5% Enchantment Points§r",
+  "tooltip.neava_eternalsplendor.catalyst": "§7Enchanting Catalyst§r",
+  "tooltip.neava_eternalsplendor.enchantingfuel": "§7Enchantment Soul§r",
+  "tooltip.neava_eternalsplendor.basicenchantcore": "§9Creates Enchantments From§r §7[Basic]§r §9Series\nEnchantment Points: 1 - 5§r",
+
+
+
+  "enchantment.neava_eternalsplendor.test_enchant": "Test Enchant",
+  "enchantment.neava_eternalsplendor.test_enchant2": "Test Enchant2"
 }
