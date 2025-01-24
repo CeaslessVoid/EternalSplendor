@@ -61,13 +61,6 @@ public class EternalSplendorMod
         messageID++;
     }
 
-
-
-
-
-
-
-
     // Random shit MDK came with
 
     private void commonSetup(final FMLCommonSetupEvent event)

@@ -54,6 +54,34 @@ public abstract class EnchantmentTableBlockMixin {
             }, pPos);
         }
         return InteractionResult.SUCCESS;
+
+//        if (pLevel.isClientSide) {
+//            return InteractionResult.SUCCESS;
+//        } else {
+//            pPlayer.openMenu(pState.getMenuProvider(pLevel, pPos));
+//            return InteractionResult.CONSUME;
+//        }
     }
+
+//    /**
+//     * @author Neava
+//     * @reason Bleh
+//     */
+//    @Overwrite
+//    public @Nullable MenuProvider getMenuProvider(BlockState pState, Level pLevel, BlockPos pPos) {
+//        BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+//        if (blockEntity instanceof EnchantmentTableBlockEntity enchantmentTableBlockEntity) {
+//            return new SimpleMenuProvider(
+//                (containerId, inventory, player) ->
+//                {
+//                    return new NewEnchantmentMenu(containerId, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pPos));
+//                },
+//                Component.literal("")
+//            );
+//        }
+//        else {
+//        return null;
+//        }
+//    }
 
 }

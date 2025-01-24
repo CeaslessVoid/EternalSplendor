@@ -8,14 +8,22 @@ public class EnchantmentBase extends Enchantment {
 
     private final String series;
 
-    protected EnchantmentBase(Rarity pRarity, EnchantmentCategory pCategory, EquipmentSlot[] pApplicableSlots, String series) {
+    private final String identity;
+
+    protected EnchantmentBase(Rarity pRarity, EnchantmentCategory pCategory, EquipmentSlot[] pApplicableSlots, String series, String identity) {
         super(pRarity, pCategory, pApplicableSlots);
 
         this.series = series;
+
+        this.identity = identity;
     }
 
     public String getSeries() {
         return series;
+    }
+
+    public String getIdentity() {
+        return identity;
     }
 
     public int getMinCost(int pLevel) {

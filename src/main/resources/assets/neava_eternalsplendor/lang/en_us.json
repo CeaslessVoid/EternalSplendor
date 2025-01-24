@@ -1,17 +1,28 @@
 {
   "tooltip.neava_eternalsplendor.enchantingtable" : "Enchatning Table Menu",
   "item.neava_eternalsplendor.lapisdust": "Lapis Lazuli Dust",
+  "item.neava_eternalsplendor.runicpage": "Runic Page",
   "item.neava_eternalsplendor.basicenchantcore": "Basic Enchantment Core",
   "creativetab.eternalsplendor_tab": "Eternal Splendor",
 
 
+  "tooltip.neava_eternalsplendor.bookshelf": "§9+5% Enchantment Points to Enchanting Tables§r",
   "tooltip.neava_eternalsplendor.lapisdust": "§9Enchanting effect: +5% Enchantment Points§r",
   "tooltip.neava_eternalsplendor.catalyst": "§7Enchanting Catalyst§r",
   "tooltip.neava_eternalsplendor.enchantingfuel": "§7Enchantment Soul§r",
-  "tooltip.neava_eternalsplendor.basicenchantcore": "§9Creates Enchantments From§r §7[Basic]§r §9Series\nEnchantment Points: 1 - 5§r",
+  "tooltip.neava_eternalsplendor.basicenchantcore": "§9Creates Enchantments From§r §7[Basic]§r §9Series§r\n§9Enchantment Points: 15§r",
+  "tooltip.neava_eternalsplendor.runicpage": "§9Removes all Enchantments and stores them.§r",
+  "tooltip.neava_eternalsplendor.enchantedbook": "§9Use at anvil: Replaces all enchants with stored enchants.§r",
 
-
+  "tooltip.neava_eternalsplendor.failenchant": "The book doesn't respond",
 
   "enchantment.neava_eternalsplendor.test_enchant": "Test Enchant",
-  "enchantment.neava_eternalsplendor.test_enchant2": "Test Enchant2"
+  "enchantment.neava_eternalsplendor.test_enchant2": "Test Enchant2",
+  "enchantment.neava_eternalsplendor.basic_melee_protect_enchant": "Melee Protection",
+  "enchantment.neava_eternalsplendor.basic_element_protect_enchant": "Elemental Protection",
+  "enchantment.neava_eternalsplendor.basic_fall_protect_enchant": "Feather Falling",
+  "enchantment.neava_eternalsplendor.basic_blast_protect_enchant": "Blast Protection",
+  "enchantment.neava_eternalsplendor.basic_projectile_protect_enchant": "Projectile Protection",
+  "enchantment.neava_eternalsplendor.basic_maxhealth_enchant": "Vigor",
+  "enchantment.neava_eternalsplendor.basic_speed_enchant": "Speed"
 }

@@ -43,6 +43,7 @@ public class EnchantingFuelItem extends Item {
         return minLevel;
     }
 
+
     public boolean matchesRule(Enchantment enchantment) {
         return rule.test(enchantment);
     }
